@@ -1,0 +1,69 @@
+<div
+  class="toast m-0 d-flex flex-column pt-0"
+  [@fadeAnimation]="{
+    value: animationState,
+    params: {
+      fadeIn: toastConfig.animation.fadeIn,
+      fadeOut: toastConfig.animation.fadeOut
+    }
+  }"
+  (@fadeAnimation.done)="onFadeFinished($event)"
+  [ngStyle]="{ 'background-color': color }"
+>
+
+  <button type="button" (click)="close()" class="close mt-0 text-white ml-1 pull-right text-right ">&times;</button>
+  <div class="d-flex flex-row mt-n1">
+     <nb-icon fas [icon]="iconType" size="2x" class="white-text mr-1" aria-hidden="true"></nb-icon>
+  <div class="d-flex flex-column">
+    <span  class="font-weight-bold wrap" [ngStyle]="{ color: textColor }">
+      {{ data.title }}
+    </span>
+    <div
+    class="wrap"
+      [innerHtml]="data.text"
+      [ngStyle]="{ color: textColor }"
+    >
+  </div>
+  </div>
+  </div>
+  <div *ngIf="data.type== 'warning'"  class="d-flex flex-row mt-2 ">
+    <button  nbButton (click)="yesClick()" class="px-4 py-1 bg-white text-muted border border-light mr-2  ml-auto my-auto rounded">
+      Yes
+    </button>
+    <button (click)="noClick()" nbButton class="px-4 py-1 text-muted border border-light  mr-3 my-auto rounded">
+      No
+    </button>
+  </div>
+</div>
+
+<!-- <div
+  class="toast"
+  [@fadeAnimation]="{
+    value: animationState,
+    params: {
+      fadeIn: toastConfig.animation.fadeIn,
+      fadeOut: toastConfig.animation.fadeOut
+    }
+  }"
+  (@fadeAnimation.done)="onFadeFinished($event)"
+  [ngStyle]="{ 'background-color': color }"
+  fxLayout
+  fxLayoutGap="5px"
+>
+  <mat-icon
+    fxFlex="15%"
+    style="margin-right:10px;margin-left:5px;"
+    [ngStyle]="{ color: textColor }"
+    >{{ iconType }}
+  </mat-icon>
+
+  <div
+    fxFlex
+    style="word-break:break-word;"
+    [innerHtml]="data.text"
+    [ngStyle]="{ color: textColor }"
+  ></div>
+  <a fxFlex="15%" class="close" mat-icon-button>
+    <mat-icon (click)="close()">close</mat-icon>
+  </a>
+</div> -->

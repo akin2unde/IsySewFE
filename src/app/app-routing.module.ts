@@ -7,11 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("../app/views/main-layout/main-layout.module").then((m) => m.MainLayoutModule),
   },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  }
+  // {
+  //   path: '',
+  //   redirectTo: 'home',
+  //   pathMatch: 'full'
+  // }
 ];
 
 @NgModule({

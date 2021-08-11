@@ -1,0 +1,30 @@
+.toast {
+  position: relative;
+  // display: flex;
+  // justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px 5px 10px 5px;
+  width: 300px;
+  font-size: 13.5px;
+  background: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.11);
+}
+.mat-icon-button.close {
+  width: 5px;
+  height: 5px;
+  line-height: 5px;
+  .mat-icon {
+    font-size: 5px;
+    width: 5px;
+    height: 5px;
+    line-height: 5px;
+  }
+}
+.wrap {
+  word-break: break-word;
+  text-align: left;
+}

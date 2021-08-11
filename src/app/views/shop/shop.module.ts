@@ -12,6 +12,6 @@ export const appRoutes: Routes = [
   imports: [
   RouterModule.forChild(appRoutes), CommonModule
   ],
-  exports: [ShopComponent]
+  exports: []
 })
 export class ShopModule { }
