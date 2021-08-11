@@ -78,6 +78,10 @@
               "browserTarget": "IsySewFE:build:development"
             }
           },
+          "options": {
+            "browserTarget": "latest-angular:build",
+			      "port": 4500
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
