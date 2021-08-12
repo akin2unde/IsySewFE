@@ -1,0 +1,16 @@
+
+@import '../../../themes.scss';
+ 
+@include nb-install-component() {
+ .topMost{
+//  height: 100px;
+ background: #F1F1F1;
+}
+.topMenu{
+  // height: 100px;
+}
+ ::ng-deep nb-layout-header nav {
+    padding: 0px !important;
+    // height: 20vh;
+ }
+}

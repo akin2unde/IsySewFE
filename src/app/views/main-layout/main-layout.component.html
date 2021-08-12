@@ -1,12 +1,25 @@
 <nb-layout>
-    <nb-layout-header>
-        <div class="d-flex flex-row">
-    <button nbButton routerLink="/home" class="bg-white mr-3">HOME</button>
-    <button nbButton routerLink="/shop" class="bg-white mr-3">SHOP</button>
-    <button nbButton routerLink="/blog" class="bg-white">BLOG</button>
-  </div> 
+    <nb-layout-header >
+        <div class="column w-100">
+        <div class="topMost d-flex p-2 m-0 my-auto">
+          <p class="text-black my-auto mr-auto">Free Shipping, 30 days return or refund gurantee</p>
+          <div class="row  m-md-0 p-md-0">
+                <button nbButton routerLink="/home" class="mr-3 bg-transparent">SIGN IN</button>
+                <button nbButton routerLink="/home" class="mr-3 bg-transparent">FAQS</button>
+                <nb-select placeholder="Currency" class="size-small my-auto border-0 ">
+                    <nb-option value="1">NGN</nb-option>
+                    <nb-option value="2">USD</nb-option>
+                </nb-select>
+          </div>
+        </div>
+          <div class="d-flex flex-row">
+    <button nbButton routerLink="/home" class="bg-white border-0 mr-3">HOME</button>
+    <button nbButton routerLink="/shop" class="bg-white border-0 mr-3">SHOP</button>
+    <button nbButton routerLink="/blog" class="bg-white border-0">BLOG</button>
+        </div>
+        </div>
     </nb-layout-header>
-	<nb-layout-column>
+	<nb-layout-column class="bg-white ">
     <router-outlet></router-outlet>
    </nb-layout-column>
 </nb-layout>
