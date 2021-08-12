@@ -1,2 +1,42 @@
-<p>home works!</p>
-<button nbButton  class="bg-primary text-white mr-3">HOME</button>
+<nb-layout>
+<nb-layout-column class=" column">
+    <div class="topPix row">
+      <div class="column col-md-6 my-auto mb-3">
+<h2 class="font-weight-bolder">DISCOVER & SHOP THE TREND</h2>
+<p>Chakra partners with various financial institutions to provide the various solutions to her customers.</p>
+<button nbButton  class="mt-3 font-weight-normal px-5 py-4 text-white bg-danger">SHOP NOW</button>
+
+</div>
+<img class="img-fluid col-6 mb-4" src="../../../assets/images/frame.png"/>  
+    </div>
+    <div class="column">
+     <h4 class="font-weight-bold text-center p-3">Featured Products </h4> 
+     <div class="row space-grid">
+          <ng-template ngFor let-item [ngForOf]="products ">
+              <div class="col-3">
+                  <div class=" p-0 card">
+                  <!-- top -->
+                  <div class="column px-3 pt-3 top-card">
+                    <div class="row mx-2 mb-2 ">
+                        <img class="img-fluid icon-image" src="../../../assets/images/cart-item.png"/>
+                        <img class="img-fluid icon-image" src="../../../assets/images/fav-blue.png"/>
+                        <img class="img-fluid icon-image" src="../../../assets/images/search-blue.png"/>
+                    </div>
+                    <img style="height: 160px;" class="mx-auto d-block  img-fluid row w-75" [src]="item.images[0].url"/>
+                    <button nbButton  class="my-3 mx-auto  d-block p-2 text-white bg-danger">View Details</button>
+                  </div>
+                   <!-- bottom -->
+                   <div class="column">
+                       <h4 class="text-center  font-weight-normal px-3 py-2 name-lbl">{{item.name}}</h4>
+                       <p class="px-3 small text-center code-lbl">Code - {{item.code}}</p>
+                       <p class="small text-center px-3  code-lbl">{{item.price}}</p>
+                   </div>
+              </div> 
+              </div>   
+          </ng-template>    
+     </div>
+   
+    </div>
+</nb-layout-column>
+
+</nb-layout>

@@ -1,25 +1,33 @@
 <nb-layout>
-    <nb-layout-header >
+    <nb-layout-header class="mb-4" >
         <div class="column w-100">
         <div class="topMost d-flex p-2 m-0 my-auto">
-          <p class="text-black my-auto mr-auto">Free Shipping, 30 days return or refund gurantee</p>
-          <div class="row  m-md-0 p-md-0">
+          <p class="text-black my-auto ml-3 mr-auto">Free Shipping, 30 days return or refund gurantee</p>
+          <div class="row mt-2  mr-md-3 p-md-0">
                 <button nbButton routerLink="/home" class="mr-3 bg-transparent">SIGN IN</button>
                 <button nbButton routerLink="/home" class="mr-3 bg-transparent">FAQS</button>
-                <nb-select placeholder="Currency" class="size-small my-auto border-0 ">
+                <nb-select outline="false" size="small" placeholder="Currency" class="size-small my-auto border-0 ">
                     <nb-option value="1">NGN</nb-option>
                     <nb-option value="2">USD</nb-option>
                 </nb-select>
           </div>
         </div>
-          <div class="d-flex flex-row">
-    <button nbButton routerLink="/home" class="bg-white border-0 mr-3">HOME</button>
-    <button nbButton routerLink="/shop" class="bg-white border-0 mr-3">SHOP</button>
-    <button nbButton routerLink="/blog" class="bg-white border-0">BLOG</button>
+        <div class="row mt-3 bg-white">
+          <img  style="height: 40px;" src="../../../assets/images/log-top-home.png" class=" col-md-4 mr-auto img-fliud"/>
+          <div class="topnav ml-auto d-flex flex-row col-md-4">
+          <a [routerLinkActive]="'active'" routerLink="/home" >HOME</a>
+          <a [routerLinkActive]="'active'" routerLink="/shop">SHOP</a>
+          <a [routerLinkActive]="'active'" routerLink="/blog">BLOG</a>
+        </div>
+         <div style="width: 25px; height: 25px;"  class="d-flex my-auto col-md-2 justify-content-between mr-5">
+          <img src="../../../assets/images/search.png" class="img-fluid "/>
+          <img src="../../../assets/images/heart.png" class="img-fluid"/>
+          <img src="../../../assets/images/shopping-bag.png" class="img-fluid "/>
+         </div>
         </div>
         </div>
     </nb-layout-header>
-	<nb-layout-column class="bg-white ">
+	<nb-layout-column class="bg-white pt-3">
     <router-outlet></router-outlet>
    </nb-layout-column>
 </nb-layout>

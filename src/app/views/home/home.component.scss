@@ -1,0 +1,30 @@
+.topPix{
+    background: #C8E5E2;
+}
+.code-lbl{
+    color: rgba(33, 36, 61, 0.9);
+}
+.name-lbl{
+  color:   #DD1818;
+}
+.icon-image{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.top-card{
+    background: #F6F7FB;
+}
+.bottom-card{
+    
+}
+.space-grid {
+    .row {
+      margin: -0.5rem;
+    }
+    div[class^=col-] {
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+  }
