@@ -1,7 +1,8 @@
 <nb-layout>
     <nb-layout-header class="mb-4" >
-        <div class="column w-100">
-        <div class="topMost d-flex p-2 m-0 my-auto">
+        <div class="column my-auto w-100">
+          <div class="topMost px-100">
+             <div class=" d-flex p-1 my-auto">
           <p class="text-black my-auto ml-3 mr-auto">Free Shipping, 30 days return or refund gurantee</p>
           <div class="row mt-2  mr-md-3 p-md-0">
                 <button nbButton routerLink="/home" class="mr-3 bg-transparent">SIGN IN</button>
@@ -11,9 +12,11 @@
                     <nb-option value="2">USD</nb-option>
                 </nb-select>
           </div>
-        </div>
+        </div> 
+          </div>
+      
         <div class="row mt-3 bg-white">
-          <img  style="height: 40px;" src="../../../assets/images/log-top-home.png" class=" col-md-4 mr-auto img-fliud"/>
+          <img  style="height: 40px; object-fit: none;" src="../../../assets/images/log-top-home.png" class="my-auto col-md-4 mr-auto img-fliud"/>
           <div class="topnav ml-auto d-flex flex-row col-md-4">
           <a [routerLinkActive]="'active'" routerLink="/home" >HOME</a>
           <a [routerLinkActive]="'active'" routerLink="/shop">SHOP</a>
@@ -27,7 +30,7 @@
         </div>
         </div>
     </nb-layout-header>
-	<nb-layout-column class="bg-white pt-3">
+	<nb-layout-column class="bg-white p-0 mt-4 pt-3">
     <router-outlet></router-outlet>
    </nb-layout-column>
 </nb-layout>

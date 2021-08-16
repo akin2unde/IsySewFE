@@ -16,9 +16,6 @@
 .top-card{
     background: #F6F7FB;
 }
-.bottom-card{
-    
-}
 .space-grid {
     .row {
       margin: -0.5rem;
@@ -28,3 +25,9 @@
       box-sizing: border-box;
     }
   }
+
+  .list-item-highlight{
+    background: rgba(200, 229, 226, 0.4);
+  }
+  
+

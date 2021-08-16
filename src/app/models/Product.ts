@@ -14,4 +14,5 @@ export class Product extends BaseEntity {
   images: Image[] = [];
   categories: String[] = [];
   reviewCount = 0
+  isHighlight=false;
 }
